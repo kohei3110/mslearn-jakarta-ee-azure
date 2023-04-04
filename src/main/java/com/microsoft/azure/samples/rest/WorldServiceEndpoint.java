@@ -40,7 +40,7 @@ public class WorldServiceEndpoint {
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    @Path("/area/{continent}")
+    @Path("/areas/{continent}")
     public Response getContinent(@PathParam("continent") String continent) {
         List<Country> country = countrySvc.findItemByContinent(continent);
         GenericEntity<List<Country>> genericEntity = new GenericEntity<List<Country>>(country) {
