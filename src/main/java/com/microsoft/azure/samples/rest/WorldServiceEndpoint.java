@@ -31,7 +31,7 @@ public class WorldServiceEndpoint {
     CityService citySvc;
 
     @GET
-    @Path(value = "/area")
+    @Path(value = "/areas")
     @Produces(MediaType.APPLICATION_JSON)
     public Response getAllContinents() {
         List<String> continents = countrySvc.findAllContinents();
